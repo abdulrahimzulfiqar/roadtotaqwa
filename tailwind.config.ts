@@ -18,6 +18,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    colors: {
+      'blue' : '#0D1A2D',
+      'golden' : '#E6B76F',
+    }
   },
   darkMode: "class",
   plugins: [nextui()],
