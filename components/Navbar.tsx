@@ -33,30 +33,32 @@ export default function App() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
+          <Link href="/">
           <p className="font-bold text-inherit text-golden">TAQWA</p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#" className="text-golden">
+          <Link color="foreground" href="/islam" className="text-golden">
             Learn Islam
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#" aria-current="page" className="text-golden">
+          <Link href="/hadees" aria-current="page" className="text-golden">
             Hadees
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className="text-golden">
+          <Link color="foreground" href="/about" className="text-golden">
             About
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#" className="text-golden">
+          <Link href="/login" className="text-golden">
             Login
           </Link>
         </NavbarItem>
@@ -64,7 +66,7 @@ export default function App() {
           <Button
             as={Link}
             color="warning"
-            href="#"
+            href="/signup"
             variant="flat"
             className="text-golden"
           >
