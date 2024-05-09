@@ -12,7 +12,7 @@ import {
 export default function App() {
   return (
     <div className="flex justify-center items-center h-screen">
-      <Card className="max-w-[400px] bg-golden">
+      <Card className="max-w-[400px] bg-golden mb-14">
         <CardHeader className="flex gap-3">
           <Image
             alt="nextui logo"
