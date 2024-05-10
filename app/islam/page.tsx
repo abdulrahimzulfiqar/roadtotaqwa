@@ -11,17 +11,20 @@ export default function App() {
     {
       title: "Backend Beats",
       subtitle: "10 Tracks",
-      imageUrl: "https://thecurrent.pk/wp-content/uploads/2022/12/maulana-tariq-jamil.jpg",
+      imageUrl:
+        "https://thecurrent.pk/wp-content/uploads/2022/12/maulana-tariq-jamil.jpg",
     },
     {
       title: "Backend Beats",
       subtitle: "10 Tracks",
-      imageUrl: "https://thecurrent.pk/wp-content/uploads/2022/12/maulana-tariq-jamil.jpg",
+      imageUrl:
+        "https://thecurrent.pk/wp-content/uploads/2022/12/maulana-tariq-jamil.jpg",
     },
     {
       title: "Backend Beats",
       subtitle: "10 Tracks",
-      imageUrl: "https://thecurrent.pk/wp-content/uploads/2022/12/maulana-tariq-jamil.jpg",
+      imageUrl:
+        "https://thecurrent.pk/wp-content/uploads/2022/12/maulana-tariq-jamil.jpg",
     },
     {
       title: "Backend Beats",
@@ -47,7 +50,6 @@ export default function App() {
               className="object-cover rounded-xl"
               src={card.imageUrl}
               width={270}
-              
             />
           </CardBody>
         </Card>

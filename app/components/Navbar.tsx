@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+
 import {
   Navbar,
   NavbarBrand,
@@ -23,6 +24,7 @@ export default function App() {
     { label: "Login", color: "golden" },
     { label: "Signup", color: "golden" },
   ];
+
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-blue">
@@ -56,9 +58,9 @@ export default function App() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent justify="end">
+      <NavbarContent justify="end" >
         <NavbarItem className="hidden lg:flex">
-          <Link href="/login" className="text-golden">
+          <Link href="/sign-in" className="text-golden">
             Login
           </Link>
         </NavbarItem>
@@ -66,7 +68,7 @@ export default function App() {
           <Button
             as={Link}
             color="warning"
-            href="/signup"
+            href="/sign-up"
             variant="flat"
             className="text-golden"
           >
