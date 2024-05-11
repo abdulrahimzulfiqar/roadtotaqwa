@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import {
   Card,
   CardHeader,
@@ -10,6 +11,28 @@ import {
 } from "@nextui-org/react";
 
 export default function App() {
+  // Array of random quotes
+  const quotes = [
+    "The Prophet Muhammad (peace be upon him) said: Convey (knowledge) from me even if it is just one verse. – Sahih Al-Bukhari",
+    "The Prophet Muhammad (peace be upon him) said: He who does not acquire knowledge with the sole intention of seeking the Pleasure of Allah but for worldly gain, will not smell the fragrance of Paradise on the Day of Resurrection. If you love what you are doing, you will be successful. – Abu Dawood",
+    "The Prophet Muhammad (peace be upon him) said: The best among you are those who learn the Quran and teach it. – Sahih Al-Bukhari",
+    "The Prophet Muhammad (peace be upon him) said: Whoever treads a path seeking knowledge, Allah will make easy for him the path to Paradise – Sahih Muslim",
+  ];
+
+  // State to store the selected random quote
+  const [randomQuote, setRandomQuote] = useState("");
+
+  // Function to update the random quote
+  const updateRandomQuote = () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    setRandomQuote(quotes[randomIndex]);
+  };
+
+  // Use useEffect to update the random quote when the component mounts or updates
+  useEffect(() => {
+    updateRandomQuote();
+  }, []);
+
   return (
     <div className="flex justify-center items-center h-screen">
       <Card className="max-w-[400px] bg-golden mb-14">
@@ -28,16 +51,17 @@ export default function App() {
         </CardHeader>
         <Divider />
         <CardBody>
-          <p>Make beautiful websites regardless of your design experience.</p>
+          {/* Display the random quote */}
+          <p>{randomQuote}</p>
         </CardBody>
         <Divider />
         <CardFooter>
           <Link
             isExternal
             showAnchorIcon
-            href="https://github.com/nextui-org/nextui"
+            href="https://www.instagram.com/road_2_taqwa/"
           >
-            Visit source code on GitHub.
+            Visit Instagram.
           </Link>
         </CardFooter>
       </Card>
